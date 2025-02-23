@@ -4,18 +4,17 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #333;
-    background-color :linear-gradient(to bottom, #e0dcdf 0%, #2037c7 70%);
-    
+    background-color: linear-gradient(to bottom, #e0dcdf 0%, #2037c7 70%);
 }
 
 header {
     background: linear-gradient(90deg, #FF512F, #F09819);
     color: #fff;
     text-align: center;
-   padding: 30px 90px;
+    padding: 30px 90px;
     animation: fadeIn 1s ease-in-out;
     margin: 3px;
-    width: 100%
+    width: 100%;
 }
 
 nav {
@@ -67,7 +66,6 @@ nav {
 .btn {
     display: inline-block;
     background-color: #e91c05;
-    
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 5px;
@@ -145,7 +143,7 @@ nav {
     width: 100%;
 }
 
-.gov{
+.gov {
     text-align: center;
     padding-top: 100px;
 }
@@ -156,27 +154,25 @@ nav {
     justify-content: space-around;
     padding: 20px;
     padding-top: 100px;
-  }
+}
 
-  .video-item {
+.video-item {
     width: 300px; /* Adjust as needed */
     margin-bottom: 20px;
-  }
-   
+}
 
-
-  /* style.css */
+/* style.css */
 
 .logo-scroller {
     width: 100%;
     overflow: hidden;
-    white-space: nowrap; /* Prevent line breaks */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    white-space: nowrap;
+    box-sizing: border-box; 
 }
 
 .logo-track {
     display: inline-block;
-    animation: scroll 20s linear infinite; /* Adjust speed as needed */
+    animation: scroll 20s linear infinite; 
 }
 
 .logo {
@@ -185,7 +181,7 @@ nav {
 }
 
 .logo img {
-    height: 50px; /* Adjust logo size */
+    height: 50px; 
     vertical-align: middle;
 }
 
@@ -194,45 +190,90 @@ nav {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%); /* Half of the total content width */
+        transform: translateX(-50%); 
     }
 }
-/* style.css */
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+        
+        flex-direction: column;
+    }
+    
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .hero p {
+        font-size: 1em;
+    }
+    
+    .course-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+   
+    .logo-scroller, .logo-track {
+        overflow-x: auto;
+    }
+}
+
+
 
 .video-container {
     display: flex;
-    flex-wrap: wrap; /* Allow videos to wrap to the next line */
-    justify-content: center; /* Center videos horizontally */
-    gap: 20px; /* Space between video items */
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
     padding: 20px;
 }
 
 .video-item {
-    flex: 1 1 560px; /* Flexible width, initial width 560px */
-    max-width: 560px; /* Maximum width to prevent stretching */
+    flex: 1 1 560px; 
+    max-width: 560px; 
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .video-item:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 iframe {
-    width: 100%; /* Make iframe responsive within its container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto;
 }
 
-/*For smaller screens*/
+
 @media(max-width: 768px){
     .video-item{
         flex: 1 1 100%;
         max-width: 100%;
     }
 }
-
-
-
 
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
@@ -317,22 +358,17 @@ body { background: #f8f9fa; text-align: center; padding: 40px; }
 .footer-container {
     background-color: rgb(207, 92, 16); 
     color: #fff;
-    
     padding: 30px;
     font-family: sans-serif;
-
-
     padding-top: 100px;
     margin-top: 100px;
     width:100%;
-   
 }
 .footer-section {
     display: inline-block;
     vertical-align: top;
     margin-right: 50px;
     width: 20%;
-
 }
 .footer-section h3 {
     margin-bottom: 15px;
@@ -511,7 +547,6 @@ body { background: #f8f9fa; text-align: center; padding: 40px; }
 }
 
 
-
 .container{
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -519,9 +554,8 @@ body { background: #f8f9fa; text-align: center; padding: 40px; }
     align-items: center;
     justify-content: flex-start;
     min-height: 100vh;
-   background-color: rgb(189, 222, 235);
+    background-color: rgb(189, 222, 235);
     padding: 40px 20px;
-
     padding-top: 150px;
     margin-top: 100px;
 }
@@ -598,11 +632,6 @@ body { background: #f8f9fa; text-align: center; padding: 40px; }
     animation: fadeIn 1s ease-out;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 .special-message h2 {
     color: #1976d2;
     margin-bottom: 10px;
@@ -619,7 +648,6 @@ body { background: #f8f9fa; text-align: center; padding: 40px; }
 review-card:nth-child(odd){
     animation-delay: 0.4s;
 }
-
 
 
 .container3{
@@ -682,4 +710,53 @@ review-card:nth-child(odd){
 .con{
     text-align: center;
     padding-top: 80px
+}
+
+
+@media (max-width: 768px) {
+   
+    header {
+        padding: 20px 10px;
+        text-align: center;
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+   
+    .container {
+        padding-top: 80px;
+        margin-top: 50px;
+    }
+
+    
+    .logo-scroller, .logo-track {
+        overflow-x: auto;
+    }
+
+    
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
 }
